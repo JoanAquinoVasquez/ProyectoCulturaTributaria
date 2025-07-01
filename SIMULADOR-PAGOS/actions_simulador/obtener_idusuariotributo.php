@@ -1,6 +1,6 @@
 <?php
 // Incluir la conexión a la base de datos
-include('..\config.php');
+include('../config.php');
 
 // Obtener los parámetros enviados por AJAX
 $id_usuario = $_POST['id_usuario'];

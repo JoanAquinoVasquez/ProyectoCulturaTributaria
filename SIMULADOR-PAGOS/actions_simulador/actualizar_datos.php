@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('..\config.php');
+include('../config.php');
 
 // Verifica si el usuario ha iniciado sesión
 if (!isset($_SESSION['id_usuario'])) {
