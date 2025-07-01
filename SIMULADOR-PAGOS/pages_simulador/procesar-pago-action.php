@@ -1,8 +1,8 @@
 <?php
-require_once('/simulador-pagos/libs/fpdf.php'); // Incluir la librería FPDF
+require_once('../libs/fpdf.php'); // Incluir la librería FPDF
 
 session_start();
-include('/simulador-pagos/config.php'); // Conexión a la base de datos
+include('../config.php'); // Conexión a la base de datos
 
 if (!isset($_SESSION['id_usuario'])) {
     echo json_encode(['success' => false, 'message' => 'No se ha iniciado sesión']);
@@ -143,15 +143,15 @@ $hora_pago = date("H:i:s");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGO EXITOSO</title>
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/stylepago-exitoso.css">
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/styleheader.css">
+    <link rel="stylesheet" href="../style_simulador/stylepago-exitoso.css">
+    <link rel="stylesheet" href="../style_simulador/styleheader.css">
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
 
-    <?php include('/simulador-pagos/includes_simulador/header.php'); ?>
+    <?php include('../includes_simulador/header.php'); ?>
 
 
     <main>
@@ -299,7 +299,7 @@ $hora_pago = date("H:i:s");
         });
     </script>
 
-    <script src="/simulador-pagos/script_simulador/script.js"></script>
+    <script src="../script_simulador/script.js"></script>
 </body>
 
 </html>

@@ -13,19 +13,19 @@ if (!isset($_SESSION['id_usuario'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil del Contribuyente</title>
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/styleperfil.css">
+    <link rel="stylesheet" href="../style_simulador/styleperfil.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <?php include('/simulador-pagos/includes_simulador/header.php'); ?>
+    <?php include('../includes_simulador/header.php'); ?>
 
     <main>
         <section class="datos-personales">
             <h2>DATOS PERSONALES DEL CONTRIBUYENTE</h2>
 
-            <form action="/simulador-pagos/actions_simulador/actualizar_datos.php" method="POST" class="form-datos" id="editForm">
+            <form action="../actions_simulador/actualizar_datos.php" method="POST" class="form-datos" id="editForm">
 
                 <div class="container-campo">
                     <div class="campo">
@@ -81,8 +81,8 @@ if (!isset($_SESSION['id_usuario'])) {
         </section>
     </main>
 
-    <script src="/simulador-pagos/script_simulador/script.js"></script>
-    <script src="/simulador-pagos/script_simulador/actualizardatos.js"></script>
+    <script src="../script_simulador/script.js"></script>
+    <script src="../script_simulador/actualizardatos.js"></script>
 </body>
 
 </html>
