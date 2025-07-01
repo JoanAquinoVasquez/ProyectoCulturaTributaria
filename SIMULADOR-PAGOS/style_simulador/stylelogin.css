@@ -20,7 +20,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url('../img_simulador/fondologin.png');
+    background-image: url('/simulador-pagos/img_simulador/fondologin.png');
     background-size: cover;
     background-repeat: no-repeat;
 
