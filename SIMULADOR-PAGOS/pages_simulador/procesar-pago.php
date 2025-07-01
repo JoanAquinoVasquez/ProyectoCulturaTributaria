@@ -19,7 +19,7 @@ $idUsuariotributo = isset($_POST['id_usuariotributo']) ? explode(',', $_POST['id
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opciones de Pago</title>
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/styleprocesar-pago.css">
+    <link rel="stylesheet" href="../style_simulador/styleprocesar-pago.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -27,7 +27,7 @@ $idUsuariotributo = isset($_POST['id_usuariotributo']) ? explode(',', $_POST['id
 <body>
 
 
-    <?php include('/simulador-pagos/includes_simulador/header.php'); ?>
+    <?php include('../includes_simulador/header.php'); ?>
     <main>
         <section class="procesar-pago">
             <div class="datos-contribuyente">
@@ -53,9 +53,9 @@ $idUsuariotributo = isset($_POST['id_usuariotributo']) ? explode(',', $_POST['id
                             <input type="radio" name="payment" id="credit-card" value="credit-card" onclick="togglePaymentFields()">
                             <span>Tarjeta de Crédito o Débito</span>
                             <div class="logos">
-                                <img src="/simulador-pagos/img_simulador/visa.png" alt="Visa">
-                                <img src="/simulador-pagos/img_simulador/bbva.jpg" alt="BBVA">
-                                <img src="/simulador-pagos/img_simulador/bcp.png" alt="BCP">
+                                <img src="../img_simulador/visa.png" alt="Visa">
+                                <img src="../img_simulador/bbva.jpg" alt="BBVA">
+                                <img src="../img_simulador/bcp.png" alt="BCP">
                             </div>
                         </label>
 
@@ -115,7 +115,7 @@ $idUsuariotributo = isset($_POST['id_usuariotributo']) ? explode(',', $_POST['id
                             <input type="radio" name="payment" id="wallets" value="wallets" onclick="togglePaymentFields()">
                             <span>Billeteras Electrónicas</span>
                             <div class="logos">
-                                <img src="/simulador-pagos/img_simulador/yape.jpeg" alt="Yape">
+                                <img src="../img_simulador/yape.jpeg" alt="Yape">
                             </div>
                         </label>
 
@@ -163,8 +163,8 @@ $idUsuariotributo = isset($_POST['id_usuariotributo']) ? explode(',', $_POST['id
         </section>
     </main>
 
-    <script src="/simulador-pagos/script_simulador/procesarpagos.js"></script>
-    <script src="/simulador-pagos/script_simulador/script.js"></script>
+    <script src="../script_simulador/procesarpagos.js"></script>
+    <script src="../script_simulador/script.js"></script>
 
 
 </body>
