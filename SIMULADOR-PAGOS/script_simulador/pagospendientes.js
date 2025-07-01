@@ -48,7 +48,7 @@ function actualizarMonto() {
         // Crear una nueva promesa para cada solicitud AJAX
         var request = new Promise(function (resolve, reject) {
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "../actions_simulador/obtener_idusuariotributo.php", true);
+            xhr.open("POST", "/simulador-pagos/actions_simulador/obtener_idusuariotributo.php", true);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
             xhr.onreadystatechange = function () {

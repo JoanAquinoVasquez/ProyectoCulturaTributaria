@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault(); 
             const formData = new FormData(this);
             // Usar fetch para enviar los datos sin recargar la página
-            fetch('../actions_simulador/actualizar_datos.php', {
+            fetch('/simulador-pagos/actions_simulador/actualizar_datos.php', {
                 method: 'POST',
                 body: formData
             })

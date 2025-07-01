@@ -5,11 +5,11 @@ function togglePassword() {
 
     if (passwordField.type === "password") {
         passwordField.type = "text";  // Muestra la contraseña
-        eyeIcon.src = "../img_simulador/eye.png";
+        eyeIcon.src = "/simulador-pagos/img_simulador/eye.png";
 
     } else {
         passwordField.type = "password";  // Oculta la contraseña
-        eyeIcon.src = "../img_simulador/hidden.png";
+        eyeIcon.src = "/simulador-pagos/img_simulador/hidden.png";
 
     }
 }
@@ -21,7 +21,7 @@ document.querySelector('form.content-login').addEventListener('submit', function
 
     const formData = new FormData(this);
 
-    fetch('../login.php', {
+    fetch('/simulador-pagos/login.php', {
         method: 'POST',
         body: formData
     })
@@ -29,7 +29,7 @@ document.querySelector('form.content-login').addEventListener('submit', function
         .then(data => {
             if (data.success) {
                 // Si el inicio de sesión es exitoso, redirigir
-                window.location.href = '../pages_simulador/miperfil.php';
+                window.location.href = '/simulador-pagos/pages_simulador/miperfil.php';
             } else {
                 // Si las credenciales son incorrectas, mostrar SweetAlert
                 Swal.fire({
