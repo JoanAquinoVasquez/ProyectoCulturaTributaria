@@ -7,7 +7,7 @@ if (!isset($_SESSION['id_usuario'])) {
     exit();
 }
 
-include('/simulador-pagos/config.php');
+include('../config.php');
 
 // Obtener el id_usuario de la sesión
 $id_usuario = $_SESSION['id_usuario'];
@@ -71,15 +71,15 @@ $idUsuariotributoArray = [];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagos Pendientes</title>
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/stylepagos-pendientes.css">
-    <link rel="stylesheet" href="/simulador-pagos/style_simulador/styleperfil.css">
+    <link rel="stylesheet" href="../style_simulador/stylepagos-pendientes.css">
+    <link rel="stylesheet" href="../style_simulador/styleperfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <?php include('/simulador-pagos/includes_simulador/header.php'); ?>
+    <?php include('../includes_simulador/header.php'); ?>
 
     <main>
         <section class="pagos-pendientes">
@@ -148,8 +148,8 @@ $idUsuariotributoArray = [];
         var id_usuario = <?php echo $_SESSION['id_usuario']; ?>;
     </script>
 
-    <script src="/simulador-pagos/script_simulador/historialpagos.js"></script>
-    <script src="/simulador-pagos/script_simulador/script.js"></script>
+    <script src="../script_simulador/historialpagos.js"></script>
+    <script src="../script_simulador/script.js"></script>
 </body>
 
 </html>
